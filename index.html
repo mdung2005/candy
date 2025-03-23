@@ -130,6 +130,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap; /* Added for better mobile display */
         }
 
         .logo-container {
@@ -164,6 +165,7 @@
             list-style: none;
             margin: 0; /* Remove default ul margin */
             padding: 0; /* Remove default ul padding */
+            flex-wrap: wrap; /* Added for better mobile display */
         }
 
         nav ul li {
@@ -197,7 +199,7 @@
 
         #showcase {
             position: relative;
-            padding: 120px 0; /* Reduced padding for mobile */
+            padding: 80px 0; /* Adjusted padding for better mobile view */
             text-align: center;
             background-attachment: fixed;
             overflow: hidden;
@@ -221,7 +223,7 @@
 
         #showcase h1 {
             font-family: var(--candy-font), var(--primary-font), sans-serif;
-            font-size: 3rem; /* Reduced font size for mobile */
+            font-size: 2.5rem; /* Adjusted font size for better mobile view */
             margin-bottom: 20px;
             text-shadow: 0 0 30px var(--luxury-gold), 0 0 60px var(--luxury-gold);
             animation: glow 3s infinite alternate;
@@ -234,14 +236,9 @@
             animation: none; /* Disable typing animation on mobile */
         }
 
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
         #showcase p {
             font-family: var(--secondary-font), sans-serif;
-            font-size: 1.2rem; /* Reduced font size for mobile */
+            font-size: 1rem; /* Adjusted font size for better mobile view */
             margin-bottom: 30px;
             max-width: 90%; /* Adjust max-width for mobile */
             margin-left: auto;
@@ -340,7 +337,7 @@
         }
 
         #pricing {
-            padding: 80px 0 60px; /* Reduced padding for mobile */
+            padding: 60px 0; /* Adjusted padding for better mobile view */
             background: linear-gradient(135deg, rgba(10, 10, 10, 0.7) 0%, rgba(138, 43, 226, 0.5) 50%, rgba(255, 215, 0, 0.3) 100%);
             text-align: center;
             position: relative;
@@ -689,7 +686,7 @@
             text-shadow: 0 0 10px var(--luxury-gold);
             letter-spacing: 1px;
         }
-        
+
         #popup p {
             font-family: var(--secondary-font), sans-serif;
             font-size: 1rem; /* Reduced font size for mobile */
@@ -761,14 +758,14 @@
         }
 
         @media (max-width: 768px) {
-            #showcase h1 { font-size: 4rem; }
-            #showcase p { font-size: 1.4rem; padding: 30px; }
-            .champion-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
-            .box { padding: 30px; }
-            nav ul li { margin-left: 15px; }
-            nav ul li a { font-size: 1rem; padding: 10px 15px; }
-            nav h1 a { font-size: 2rem; }
-            #pricing h2, #newsletter h2, #reviews h2 { font-size: 2.5rem; }
+            #showcase h1 { font-size: 2.5rem; }
+            #showcase p { font-size: 1rem; padding: 20px; }
+            .champion-grid { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+            .box { padding: 20px; }
+            nav ul li { margin-left: 10px; }
+            nav ul li a { font-size: 0.9rem; padding: 8px 10px; }
+            nav h1 a { font-size: 1.5rem; }
+            #pricing h2, #newsletter h2, #reviews h2 { font-size: 1.8rem; }
         }
 
         header {
@@ -776,22 +773,22 @@
         }
 
         nav ul li a {
-            padding: 14px 20px;
+            padding: 10px 15px;
             border-radius: 10px;
         }
 
         #showcase h1 {
-            font-size: 7rem;
+            font-size: 4rem;
         }
 
         #showcase p {
-            padding: 50px;
+            padding: 30px;
             border-width: 3px;
         }
 
         .btn {
-            padding: 20px 45px;
-            border-radius: 15px;
+            padding: 15px 30px;
+            border-radius: 10px;
         }
 
         #pricing table {
@@ -804,7 +801,7 @@
         }
 
         .box {
-            padding: 70px;
+            padding: 50px;
             border-width: 2px;
             box-shadow: 0 20px 45px var(--box-shadow-color);
         }
@@ -851,8 +848,6 @@
             color: var(--text-color);
             font-size: 1rem;
         }
-        }
-
     </style>
     <!-- Messenger Plugin chat Code -->
     <div id="fb-root"></div>
